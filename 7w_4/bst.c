@@ -11,7 +11,7 @@ treeNode* searchBST(treeNode* root, element x) {
 		else if (x == p->key) return p;
 		else p = p->right;
 	}
-	printf("\n Ã£´Â Å°°¡ ¾ø½À´Ï´Ù!");
+	printf("\n ì°¾ëŠ” í‚¤ê°€ ì—†ìŠµë‹ˆë‹¤!");
 	return p;
 }
 
@@ -26,7 +26,7 @@ treeNode* insertBSTNode(treeNode* p, element x) {
 	}
 	else if (x < p->key) p->left = insertBSTNode(p->left, x);
 	else if (x > p->key) p->right = insertBSTNode(p->right, x);
-	else printf("\n ÀÌ¹Ì °°Àº Å°°¡ ÀÖ½À´Ï´Ù! \n");
+	else printf("\n ì´ë¯¸ ê°™ì€ í‚¤ê°€ ìˆìŠµë‹ˆë‹¤! \n");
 
 	return p;
 }
@@ -44,7 +44,7 @@ void deleteBSTNode(treeNode* root, element key) {
 	}
 
 	if (p == NULL) {
-		printf("\n Ã£´Â Å°°¡ ÀÌÁø Æ®¸®¿¡ ¾ø½À´Ï´Ù!!");
+		printf("\n ì°¾ëŠ” í‚¤ê°€ ì´ì§„ íŠ¸ë¦¬ì— ì—†ìŠµë‹ˆë‹¤!!");
 		return;
 	}
 
